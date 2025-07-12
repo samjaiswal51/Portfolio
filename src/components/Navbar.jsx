@@ -9,7 +9,6 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -48,7 +47,7 @@ const Navbar = () => {
           bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
           text-transparent bg-clip-text drop-shadow-[0_0_8px_#9333ea]"
         >
-          MyPortfolio
+          sam.dev
         </h1>
 
         {/* Desktop Nav */}
