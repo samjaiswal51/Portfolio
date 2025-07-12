@@ -13,7 +13,6 @@ const ContactPage = () => {
         animation: 'gradientAnimation 15s ease infinite',
       }}
     >
-      {/* Background elements */}
       <div className="wave-bg"></div>
       {[...Array(25)].map((_, i) => (
         <div 
