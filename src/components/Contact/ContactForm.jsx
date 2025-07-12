@@ -22,16 +22,15 @@ const ContactForm = () => {
     
     try {
       await emailjs.send(
-        'service_g4eoslv', // Replace with your EmailJS service ID
-        'template_i0paikh', // Replace with your EmailJS template ID
+        'service_g4eoslv',
+        'template_i0paikh',
         formData,
-        'l1cGSBoyVlNg0ASw6' // Replace with your EmailJS public key
+        'l1cGSBoyVlNg0ASw6'
       );
       
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
       
-      // Reset status after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
     } catch (error) {
       console.error('Failed to send message:', error);
