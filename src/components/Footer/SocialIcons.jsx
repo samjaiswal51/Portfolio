@@ -1,28 +1,36 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiTwitter, FiLinkedin, FiInstagram } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
+import { FaHackerrank } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 const SocialIcons = () => {
-  const socials = [
-    { icon: <FiGithub />, url: 'https://github.com' },
-    { icon: <FiTwitter />, url: 'https://twitter.com' },
-    { icon: <FiLinkedin />, url: 'https://linkedin.com' },
-    { icon: <FiInstagram />, url: 'https://instagram.com' }
+  const platforms = [
+    { icon: <FiGithub />, url: "#", name: "GitHub" },
+    { icon: <FiLinkedin />, url: "#", name: "LinkedIn" },
+    { icon: <FaHackerrank />, url: "#", name: "HackerRank" },
+    { icon: <SiLeetcode />, url: "#", name: "LeetCode" },
+    { icon: <FiInstagram />, url: "#", name: "Instagram" }
   ];
 
   return (
-    <div className="flex space-x-4">
-      {socials.map((social, index) => (
+    <div className="social-icons-container">
+      {platforms.map((platform, index) => (
         <motion.a
           key={index}
-          href={social.url}
+          href={platform.url}
           target="_blank"
           rel="noopener noreferrer"
-          whileHover={{ y: -3 }}
+          whileHover={{ 
+            y: -5,
+            background: 'linear-gradient(45deg, #4a90e2, #9147cc)'
+          }}
           whileTap={{ scale: 0.9 }}
-          className="p-2 bg-gray-800 rounded-full text-gray-300 hover:text-white hover:bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300"
+          className="social-icon"
+          aria-label={platform.name}
+          title={platform.name}
         >
-          {social.icon}
+          {platform.icon}
         </motion.a>
       ))}
     </div>
