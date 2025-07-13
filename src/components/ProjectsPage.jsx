@@ -16,6 +16,15 @@ const ProjectsPage = () => {
         "/images/projects/spotify2.png",
       ],
     },
+    {
+      title: "Portfolio Website",
+      description:
+        "A personal developer portfolio showcasing skills, projects, certifications, and contact with a modern responsive design.",
+      technologies: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
+      githubLink: "https://github.com/samjaiswal51/Portfolio",
+      liveDemo: "#",
+      screenshots: ["src/assets/screenshot1.png", "src/assets/screenshot2.png"],
+    },
   ];
 
   const miniProjects = [
@@ -62,7 +71,7 @@ const ProjectsPage = () => {
         "Technical Analysis",
       ],
     },
-    
+
     // Add more certifications with similar structure
   ];
 
