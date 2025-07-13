@@ -9,31 +9,24 @@ const Hero = () => {
   const socialLinks = [
     { 
       icon: <FaGithub />, 
-      url: 'https://github.com', 
+      url: 'https://github.com/samjaiswal51', 
       color: 'from-gray-700 to-gray-900',
       hoverColor: 'hover:from-gray-600 hover:to-gray-800',
       glowColor: 'hover:shadow-gray-500/50'
     },
     { 
       icon: <FaLinkedin />, 
-      url: 'https://linkedin.com', 
+      url: 'https://www.linkedin.com/in/samarth-jaiswal-72b67b313/', 
       color: 'from-blue-600 to-blue-800',
       hoverColor: 'hover:from-blue-500 hover:to-blue-700',
       glowColor: 'hover:shadow-blue-500/50'
     },
     { 
       icon: <FaInstagram />, 
-      url: 'https://instagram.com', 
+      url: 'https://www.instagram.com/__samarthhhh__', 
       color: 'from-pink-500 to-purple-600',
       hoverColor: 'hover:from-pink-400 hover:to-purple-500',
       glowColor: 'hover:shadow-purple-500/50'
-    },
-    { 
-      icon: <FaTwitter />, 
-      url: 'https://twitter.com', 
-      color: 'from-blue-400 to-blue-600',
-      hoverColor: 'hover:from-blue-300 hover:to-blue-500',
-      glowColor: 'hover:shadow-blue-400/50'
     },
   ];
 
@@ -196,7 +189,7 @@ const Hero = () => {
 
           <motion.div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4" variants={itemVariants}>
             <a
-              href="public/resume.pdf"
+              href="/resume.pdf"
               download
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-pink-600 text-white px-5 py-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30"
             >
