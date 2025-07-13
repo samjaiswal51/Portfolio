@@ -84,7 +84,7 @@ npm run dev
 
 ## 🙌 Connect with Me
 Feel free to explore the code, provide feedback, or reach out for collaboration!  
-<p align="center"> <a href="[https://linkedin.com/in/your-linkedin](https://www.linkedin.com/in/samarth-jaiswal-72b67b313/)" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white"/> </a> <a href="mailto:samjaiswal51@gmail.com"> <img src="https://img.shields.io/badge/Email-Send-red?style=for-the-badge&logo=gmail&logoColor=white"/> </a> </p>
+<p align="center"> <a href="https://www.linkedin.com/in/samarth-jaiswal-72b67b313/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white"/> </a> <a href="mailto:samjaiswal51@gmail.com"> <img src="https://img.shields.io/badge/Email-Send-red?style=for-the-badge&logo=gmail&logoColor=white"/> </a> </p>
 
 ---
 
