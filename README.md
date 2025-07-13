@@ -10,7 +10,7 @@
 ## 🌍 Live Demo
 
 🧑‍💻 **Check it Live Here**:  
-🔗 [https://your-portfolio.vercel.app](https://your-portfolio.vercel.app)  
+🔗 https://samarth-jaiswal-portfolio.vercel.app/
 
 ---
 
