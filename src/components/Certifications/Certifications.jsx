@@ -1,11 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight, FiExternalLink } from 'react-icons/fi';
 
 const Certifications = ({ certifications }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredCard, setHoveredCard] = useState(null);
 
   // Show 3 certificates at a time
   const itemsPerPage = 3;
@@ -86,11 +86,7 @@ const Certifications = ({ certifications }) => {
             <FiChevronRight />
           </button>
 
-          <div 
-            className="relative h-[500px] w-full overflow-hidden"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <div className="relative h-[500px] w-full overflow-hidden">
             <AnimatePresence custom={direction} initial={false}>
               <motion.div
                 key={currentIndex}
@@ -104,64 +100,36 @@ const Certifications = ({ certifications }) => {
                 {currentCertificates.map((cert, index) => (
                   <motion.div
                     key={`${currentIndex}-${index}`}
-                    className="w-[400px] h-[420px] flex-shrink-0 relative"
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
+                    className="w-[350px] h-[450px] flex-shrink-0 relative"
+                    onMouseEnter={() => setHoveredCard(index)}
+                    onMouseLeave={() => setHoveredCard(null)}
+                    whileHover={{ y: -10 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    {/* Glassmorphism Card */}
-                    <div className="absolute inset-0 bg-white/5 backdrop-blur-lg rounded-2xl border-2 border-white/10 hover:border-blue-400/50 transition-all duration-300 h-full overflow-hidden shadow-2xl">
+                    <div className="h-full bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-xl shadow-2xl overflow-hidden border border-[#2a2a4a] hover:border-blue-500 transition-all duration-300 relative">
+                      {/* Certificate Image - Always visible */}
+                      <div className={`absolute inset-0 transition-all duration-500 ${hoveredCard === index ? 'opacity-20 blur-sm' : 'opacity-100'}`}>
+                        <img
+                          className="w-full h-full object-cover"
+                          src={cert.image}
+                          alt={cert.title}
+                        />
+                      </div>
                       
-                      {/* Background Image */}
-                      <motion.div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: `url(${cert.image})` }}
-                        initial={{ filter: 'blur(0px)', opacity: 1 }}
-                        whileHover={{ 
-                          filter: 'blur(8px) brightness(0.3)',
-                          opacity: 0.7,
-                          transition: { duration: 0.4 }
-                        }}
-                      />
-                      
-                      {/* Content Overlay */}
-                      <motion.div
-                        className="absolute inset-0 flex flex-col justify-between p-8"
-                        initial={{ 
-                          backdropFilter: 'blur(0px)',
-                          backgroundColor: 'rgba(0,0,0,0)'
-                        }}
-                        whileHover={{ 
-                          backdropFilter: 'blur(10px)',
-                          backgroundColor: 'rgba(17, 17, 17, 0.7)',
-                          transition: { duration: 0.4 }
-                        }}
-                      >
-                        <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          whileHover={{ 
-                            opacity: 1, 
-                            y: 0,
-                            transition: { delay: 0.2, duration: 0.3 }
-                          }}
-                          className="flex flex-col h-full justify-center"
-                        >
-                          <h3 className="text-3xl font-bold mb-4 text-white">{cert.title}</h3>
-                          <p className="text-xl text-blue-300 mb-3">{cert.issuer}</p>
-                          <p className="text-lg text-gray-300 mb-6">{cert.date}</p>
-                          {cert.description && (
-                            <p className="text-gray-200 text-lg mb-8 leading-relaxed">{cert.description}</p>
-                          )}
-                          
-                          <div className="mt-auto">
-                            <button
-                              onClick={(e) => handleViewCertificate(cert.image, e)}
-                              className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 text-white px-8 py-4 rounded-xl transition-all duration-300 w-full text-xl font-medium shadow-lg hover:shadow-blue-500/30"
-                            >
-                              <FiExternalLink className="text-2xl" /> View Certificate
-                            </button>
-                          </div>
-                        </motion.div>
-                      </motion.div>
+                      {/* Certificate Content - Visible on hover */}
+                      <div className={`absolute inset-0 p-6 flex flex-col justify-center transition-all duration-500 ${hoveredCard === index ? 'opacity-100' : 'opacity-0'}`}>
+                        <div className="text-center">
+                          <h3 className="text-2xl font-bold mb-2 text-white">{cert.title}</h3>
+                          <p className="text-blue-300 mb-4">{cert.issuer}</p>
+                          <p className="text-gray-300 mb-6">{cert.description}</p>
+                          <button
+                            onClick={(e) => handleViewCertificate(cert.image, e)}
+                            className="mx-auto flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg transition-all duration-300"
+                          >
+                            <FiExternalLink className="text-lg" /> View Certificate
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </motion.div>
                 ))}

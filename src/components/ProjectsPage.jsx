@@ -8,11 +8,7 @@ const ProjectsPage = () => {
       title: "Spotify Clone",
       description:
         "A full-featured music streaming clone of Spotify with custom playlists,and responsive UI.",
-      technologies: [
-        "Bootstrap",
-        "Html",
-        "Css",
-      ],
+      technologies: ["Bootstrap", "Html", "Css"],
       githubLink: "https://github.com/samjaiswal51/Spotify-Clone",
       liveDemo: "#",
       screenshots: [
@@ -24,58 +20,49 @@ const ProjectsPage = () => {
 
   const miniProjects = [
     {
-  title: "Pawpal",
-  githubLink: "https://github.com/samjaiswal51/Pawpal",
-  image: "/images/mini/pawpal.png"
-},
+      title: "Pawpal",
+      githubLink: "https://github.com/samjaiswal51/Pawpal",
+      image: "/images/mini/pawpal.png",
+    },
   ];
 
   const certifications = [
     {
-  "title": "Problem Solving (Basic)",
-  "issuer": "HackerRank",
-  "date": "July 2025",
-  "image": "/images/certificates/problem_solving_basic_hr.png",
-  "link": "#",
-  "description": "The bearer of this certificate has passed the HackerRank skill certification test for Problem Solving (Basic)",
-  "skills": ["Problem Solving", "Algorithms", "Data Structures"]
-},
-    {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "January 2023",
+      title: "Problem Solving (Basic)",
+      issuer: "HackerRank",
+      date: "July 2025",
       image: "/images/certificates/problem_solving_basic_hr.png",
       link: "#",
-      description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
+      description:
+        "The bearer of this certificate has passed the HackerRank skill certification test for Problem Solving (Basic)",
+      skills: ["Problem Solving", "Algorithms", "Data Structures"],
     },
     {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "January 2023",
-      image: "/images/certificates/aws-cert.jpg",
+      title: "Java (Basic)",
+      issuer: "HackerRank",
+      date: "July 2025",
+      image: "/images/certificates/java_basic_hr.png",
       link: "#",
-      description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
+      description:
+        "The bearer of this certificate has passed the HackerRank skill certification test for Java (Basic)",
+      skills: ["Java", "Basic Syntax", "OOP Concepts", "Data Structures"],
     },
     {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "January 2023",
-      image: "/images/certificates/aws-cert.jpg",
+      title: "Deloitte Technology Job Simulation",
+      issuer: "Deloitte (via Forage)",
+      date: "July 2025",
+      image: "/images/certificates/deloitte_jobsimulation.png",
       link: "#",
-      description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
+      description:
+        "Completed practical tasks in coding and development through Deloitte's job simulation program",
+      skills: [
+        "Coding",
+        "Software Development",
+        "Problem Solving",
+        "Technical Analysis",
+      ],
     },
-    {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "January 2023",
-      image: "/images/certificates/aws-cert.jpg",
-      link: "#",
-      description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
-    },
+    
     // Add more certifications with similar structure
   ];
 
