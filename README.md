@@ -53,8 +53,8 @@ This is a **Personal Portfolio Web App** designed to showcase my projects, skill
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="assets/screenshot1.png" alt="Home Page" width="250" />
-  <img src="assets/screenshot2.png" alt="Projects Section" width="250" />
+  <img src="src/assets/screenshot1.png" alt="Home Page" width="250" />
+  <img src="src/assets/screenshot2.png" alt="Projects Section" width="250" />
 </div>
 
 ---
@@ -84,7 +84,8 @@ npm run dev
 
 ## 🙌 Connect with Me
 Feel free to explore the code, provide feedback, or reach out for collaboration!  
-<p align="center"> <a href="https://linkedin.com/in/your-linkedin" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white"/> </a> <a href="mailto:your.email@example.com"> <img src="https://img.shields.io/badge/Email-Send-red?style=for-the-badge&logo=gmail&logoColor=white"/> </a> </p>
+<p align="center"> <a href="[https://linkedin.com/in/your-linkedin](https://www.linkedin.com/in/samarth-jaiswal-72b67b313/)" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white"/> </a> <a href="mailto:samjaiswal51@gmail.com"> <img src="https://img.shields.io/badge/Email-Send-red?style=for-the-badge&logo=gmail&logoColor=white"/> </a> </p>
+
 ---
 
-⚠️ This project is continuously evolving. Feel free to fork, suggest changes, or contribute!
+#### ⚠️ This project is continuously evolving. Feel free to fork, suggest changes, or contribute!
