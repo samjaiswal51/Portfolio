@@ -6,11 +6,11 @@ import { SiLeetcode } from 'react-icons/si';
 
 const SocialIcons = () => {
   const platforms = [
-    { icon: <FiGithub />, url: "#", name: "GitHub" },
-    { icon: <FiLinkedin />, url: "#", name: "LinkedIn" },
-    { icon: <FaHackerrank />, url: "#", name: "HackerRank" },
-    { icon: <SiLeetcode />, url: "#", name: "LeetCode" },
-    { icon: <FiInstagram />, url: "#", name: "Instagram" }
+    { icon: <FiGithub />, url: "https://github.com/samjaiswal51", name: "GitHub" },
+    { icon: <FiLinkedin />, url: "https://www.linkedin.com/in/samarth-jaiswal-72b67b313/", name: "LinkedIn" },
+    { icon: <FaHackerrank />, url: "https://www.hackerrank.com/profile/samjaiswal51", name: "HackerRank" },
+    { icon: <SiLeetcode />, url: "https://leetcode.com/u/samarth_jaiswal/", name: "LeetCode" },
+    { icon: <FiInstagram />, url: "https://www.instagram.com/__samarthhhh__", name: "Instagram" }
   ];
 
   return (
