@@ -7,20 +7,20 @@ const ContactInfo = () => {
     {
       icon: <FiMail className="text-2xl text-blue-400" />,
       title: "Email",
-      value: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      value: "samjaiswal51@gmail.com",
+      link: "mailto:samjaiswal51@gmail.com"
     },
     {
       icon: <FiPhone className="text-2xl text-blue-400" />,
       title: "Phone",
       value: "+1 (123) 456-7890",
-      link: "tel:+11234567890"
+      link: "tel:+91 8303046100"
     },
     {
       icon: <FiMapPin className="text-2xl text-blue-400" />,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com"
+      value: "Uttar Pradesh, India",
+      link: "https://www.google.com/maps/place/Natwa+Police+Station/@25.1437931,82.538823,801m/data=!3m2!1e3!4b1!4m6!3m5!1s0x398fea6019527c79:0xecffd72dd207a666!8m2!3d25.1437931!4d82.5413979!16s%2Fg%2F11cmy9wmpj?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D"
     }
   ];
 
