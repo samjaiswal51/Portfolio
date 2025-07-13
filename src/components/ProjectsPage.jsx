@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       technologies: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
       githubLink: "https://github.com/samjaiswal51/Portfolio",
       liveDemo: "#",
-      screenshots: ["src/assets/screenshot1.png", "src/assets/screenshot2.png"],
+      screenshots: ["/images/projects/screenshot1.png", "/images/projects/screenshot2.png"],
     },
   ];
 
