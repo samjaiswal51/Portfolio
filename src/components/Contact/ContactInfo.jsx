@@ -13,7 +13,7 @@ const ContactInfo = () => {
     {
       icon: <FiPhone className="text-2xl text-blue-400" />,
       title: "Phone",
-      value: "+1 (123) 456-7890",
+      value: "+91 8303046100",
       link: "tel:+91 8303046100"
     },
     {
