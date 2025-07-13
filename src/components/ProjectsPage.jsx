@@ -1,66 +1,45 @@
-import React from 'react';
-import Projects from '../components/Projects';
-import Certifications from '../components/Certifications';
+import React from "react";
+import Projects from "../components/Projects";
+import Certifications from "../components/Certifications";
 
 const ProjectsPage = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment gateway, admin dashboard, and product management.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubLink: "#",
+      title: "Spotify Clone",
+      description:
+        "A full-featured music streaming clone of Spotify with custom playlists,and responsive UI.",
+      technologies: [
+        "Bootstrap",
+        "Html",
+        "Css",
+      ],
+      githubLink: "https://github.com/samjaiswal51/Spotify-Clone",
       liveDemo: "#",
       screenshots: [
-        "/images/projects/ecommerce1.jpg",
-        "/images/projects/ecommerce2.jpg",
-        "/images/projects/ecommerce3.jpg",
-        "/images/projects/ecommerce4.jpg"
-      ]
+        "/images/projects/spotify1.png",
+        "/images/projects/spotify2.png",
+      ],
     },
-    {
-      title: "Task Manager Pro",
-      description: "Productivity app with drag-n-drop interface, real-time collaboration, and calendar integration.",
-      technologies: ["React", "Firebase", "Redux"],
-      githubLink: "#",
-      liveDemo: "#",
-      screenshots: [
-        "/images/projects/taskmanager1.jpg",
-        "/images/projects/taskmanager2.jpg",
-        "/images/projects/taskmanager3.jpg"
-      ]
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather forecasting with interactive maps and 5-day predictions.",
-      technologies: ["JavaScript", "API Integration", "CSS3"],
-      githubLink: "#",
-      liveDemo: "#",
-      screenshots: [
-        "/images/projects/weather1.jpg",
-        "/images/projects/weather2.jpg"
-      ]
-    }
   ];
 
   const miniProjects = [
-    { title: "Calculator App", githubLink: "#", image: "/images/mini-projects/mini1.jpg" },
-    { title: "Quiz Game", githubLink: "#", image: "/images/mini-projects/mini2.jpg" },
-    { title: "Recipe Finder", githubLink: "#", image: "/images/mini-projects/mini3.jpg" },
-    { title: "Expense Tracker", githubLink: "#", image: "/images/mini-projects/mini4.jpg" },
-    { title: "Memory Game", githubLink: "#", image: "/images/mini-projects/mini5.jpg" },
-    { title: "Blog Template", githubLink: "#", image: "/images/mini-projects/mini6.jpg" }
+    {
+  title: "Pawpal",
+  githubLink: "https://github.com/samjaiswal51/Pawpal",
+  image: "/images/mini/pawpal.png"
+},
   ];
 
- const certifications = [
+  const certifications = [
     {
-      title: "React Developer Certification",
-      issuer: "Meta (Coursera)",
-      date: "June 2023",
-      image: "/images/certificates/java_basic_hr.png",
-      link: "#",
-      description: "Advanced React concepts including hooks, context API, and performance optimization",
-      skills: ["React", "Hooks", "Context API"]
-    },
+  "title": "Problem Solving (Basic)",
+  "issuer": "HackerRank",
+  "date": "July 2025",
+  "image": "/images/certificates/problem_solving_basic_hr.png",
+  "link": "#",
+  "description": "The bearer of this certificate has passed the HackerRank skill certification test for Problem Solving (Basic)",
+  "skills": ["Problem Solving", "Algorithms", "Data Structures"]
+},
     {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
@@ -68,7 +47,7 @@ const ProjectsPage = () => {
       image: "/images/certificates/problem_solving_basic_hr.png",
       link: "#",
       description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"]
+      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
     },
     {
       title: "AWS Certified Cloud Practitioner",
@@ -77,7 +56,7 @@ const ProjectsPage = () => {
       image: "/images/certificates/aws-cert.jpg",
       link: "#",
       description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"]
+      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
     },
     {
       title: "AWS Certified Cloud Practitioner",
@@ -86,7 +65,7 @@ const ProjectsPage = () => {
       image: "/images/certificates/aws-cert.jpg",
       link: "#",
       description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"]
+      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
     },
     {
       title: "AWS Certified Cloud Practitioner",
@@ -95,7 +74,7 @@ const ProjectsPage = () => {
       image: "/images/certificates/aws-cert.jpg",
       link: "#",
       description: "Fundamentals of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"]
+      skills: ["AWS", "Cloud Computing", "EC2", "S3"],
     },
     // Add more certifications with similar structure
   ];
@@ -103,13 +82,14 @@ const ProjectsPage = () => {
   return (
     <>
       {/* Projects Section */}
-      <section 
-        id="projects" 
+      <section
+        id="projects"
         className="relative w-full min-h-screen text-white px-6 py-16 flex flex-col items-center justify-center overflow-hidden"
         style={{
-          background: 'linear-gradient(45deg, #0b0b0b, #1a1a2e, #4a90e2, #0b0b0b)',
-          backgroundSize: '400% 400%',
-          animation: 'gradientAnimation 15s ease infinite',
+          background:
+            "linear-gradient(45deg, #0b0b0b, #1a1a2e, #4a90e2, #0b0b0b)",
+          backgroundSize: "400% 400%",
+          animation: "gradientAnimation 15s ease infinite",
         }}
       >
         <style>
@@ -145,7 +125,7 @@ const ProjectsPage = () => {
         {/* Background elements */}
         <div className="wave-bg"></div>
         {[...Array(25)].map((_, i) => (
-          <div 
+          <div
             key={i}
             className="dot absolute bg-blue-400 rounded-full"
             style={{
@@ -153,9 +133,11 @@ const ProjectsPage = () => {
               height: `${Math.random() * 8 + 4}px`,
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              animation: `dotMove ${Math.random() * 3 + 2}s ease-in-out infinite`,
+              animation: `dotMove ${
+                Math.random() * 3 + 2
+              }s ease-in-out infinite`,
               animationDelay: `${Math.random() * 2}s`,
-              opacity: 0.7
+              opacity: 0.7,
             }}
           />
         ))}
