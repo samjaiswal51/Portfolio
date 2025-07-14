@@ -16,6 +16,20 @@ const ProjectsPage = () => {
         "/images/projects/spotify2.png",
       ],
     },
+
+    {
+      title: "Amazon Homepage Clone",
+      description:
+        "A responsive static clone of Amazon's homepage built using HTML and CSS, replicating the layout, navbar, product grid, and footer.",
+      technologies: ["HTML5", "CSS3", "Font Awesome", "Google Fonts"],
+      githubLink: "https://github.com/samjaiswal51/Amazon-Clone",
+      liveDemo: "#",
+      screenshots: [
+        "/images/projects/amazon1.png",
+        "/images/projects/amazon2.png",
+      ],
+    },
+
     {
       title: "Portfolio Website",
       description:
@@ -23,7 +37,10 @@ const ProjectsPage = () => {
       technologies: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
       githubLink: "https://github.com/samjaiswal51/Portfolio",
       liveDemo: "#",
-      screenshots: ["/images/projects/screenshot1.png", "/images/projects/screenshot2.png"],
+      screenshots: [
+        "/images/projects/screenshot1.png",
+        "/images/projects/screenshot2.png",
+      ],
     },
   ];
 
