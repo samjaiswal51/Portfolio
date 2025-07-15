@@ -4,20 +4,37 @@ import Certifications from "../components/Certifications";
 
 const ProjectsPage = () => {
   const projects = [
+    
     {
-      title: "Spotify Clone",
+      title: "Hotel The Heaven",
       description:
-        "A full-featured music streaming clone of Spotify with custom playlists,and responsive UI.",
-      technologies: ["Bootstrap", "Html", "Css"],
-      githubLink: "https://github.com/samjaiswal51/Spotify-Clone",
-      liveDemo: "#",
+        "A visually appealing and fully responsive hotel website built with HTML, CSS, and JavaScript. It showcases elegant room listings, image galleries, a booking call-to-action section, and smooth navigation. Designed for modern hospitality businesses, the site provides a clean user interface and an immersive browsing experience.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      githubLink: "https://github.com/samjaiswal51/Hotel-The-Heaven",
+      liveDemo: "https://hotel-the-heaven.vercel.app/",
       screenshots: [
-        "/images/projects/spotify1.png",
-        "/images/projects/spotify2.png",
+        "/images/projects/hotel1.png",
+        "/images/projects/hotel2.png",
+        "/images/projects/hotel3.png",
+        "/images/projects/hotel4.png",
+        "/images/projects/hotel5.png",
       ],
     },
 
     {
+      title: "Portfolio Website",
+      description:
+        "A personal developer portfolio showcasing skills, projects, certifications, and contact with a modern responsive design.",
+      technologies: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
+      githubLink: "https://github.com/samjaiswal51/Portfolio",
+      liveDemo: "https://samarth-jaiswal-portfolio.vercel.app/",
+      screenshots: [
+        "/images/projects/screenshot1.png",
+        "/images/projects/screenshot2.png",
+      ],
+    },
+
+     {
       title: "Amazon Homepage Clone",
       description:
         "A responsive static clone of Amazon's homepage built using HTML and CSS, replicating the layout, navbar, product grid, and footer.",
@@ -30,18 +47,7 @@ const ProjectsPage = () => {
       ],
     },
 
-    {
-      title: "Portfolio Website",
-      description:
-        "A personal developer portfolio showcasing skills, projects, certifications, and contact with a modern responsive design.",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
-      githubLink: "https://github.com/samjaiswal51/Portfolio",
-      liveDemo: "#",
-      screenshots: [
-        "/images/projects/screenshot1.png",
-        "/images/projects/screenshot2.png",
-      ],
-    },
+    
   ];
 
   const miniProjects = [
@@ -49,6 +55,11 @@ const ProjectsPage = () => {
       title: "Pawpal",
       githubLink: "https://github.com/samjaiswal51/Pawpal",
       image: "/images/mini/pawpal.png",
+    },
+    {
+      title: "Spotify-clone",
+      githubLink: "https://github.com/samjaiswal51/Spotify-Clone",
+      image: "/images/projects/spotify1.png",
     },
   ];
 
@@ -96,7 +107,7 @@ const ProjectsPage = () => {
       link: "#",
       description:
         "The bearer of this certificate has passed the HackerRank skill certification test for Python (Basic)",
-      skills: ["Python","Basic Syntax"],
+      skills: ["Python", "Basic Syntax"],
     },
 
     // Add more certifications with similar structure
