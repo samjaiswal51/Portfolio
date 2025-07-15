@@ -88,6 +88,16 @@ const ProjectsPage = () => {
         "Technical Analysis",
       ],
     },
+    {
+      title: "Python (Basic)",
+      issuer: "HackerRank",
+      date: "July 2025",
+      image: "/images/certificates/python_basic_hr.png",
+      link: "#",
+      description:
+        "The bearer of this certificate has passed the HackerRank skill certification test for Python (Basic)",
+      skills: ["Python","Basic Syntax"],
+    },
 
     // Add more certifications with similar structure
   ];
