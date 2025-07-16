@@ -61,6 +61,11 @@ const ProjectsPage = () => {
       githubLink: "https://github.com/samjaiswal51/Spotify-Clone",
       image: "/images/projects/spotify1.png",
     },
+    {
+      title: "Calc-you-later",
+      githubLink: "https://github.com/samjaiswal51/Calc-You-Later",
+      image: "/images/mini/calc.png",
+    },
   ];
 
   const certifications = [
