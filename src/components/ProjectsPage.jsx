@@ -52,6 +52,11 @@ const ProjectsPage = () => {
 
   const miniProjects = [
     {
+      title: "Calc-you-later",
+      githubLink: "https://github.com/samjaiswal51/Calc-You-Later",
+      image: "/images/mini/calc.png",
+    },
+    {
       title: "Pawpal",
       githubLink: "https://github.com/samjaiswal51/Pawpal",
       image: "/images/mini/pawpal.png",
@@ -62,9 +67,9 @@ const ProjectsPage = () => {
       image: "/images/projects/spotify1.png",
     },
     {
-      title: "Calc-you-later",
-      githubLink: "https://github.com/samjaiswal51/Calc-You-Later",
-      image: "/images/mini/calc.png",
+      title: "Skymood",
+      githubLink: "https://github.com/samjaiswal51/Skymood",
+      image: "/images/mini/weather1.png",
     },
   ];
 
