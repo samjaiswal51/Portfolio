@@ -57,11 +57,6 @@ const ProjectsPage = () => {
       image: "/images/mini/calc.png",
     },
     {
-      title: "Pawpal",
-      githubLink: "https://github.com/samjaiswal51/Pawpal",
-      image: "/images/mini/pawpal.png",
-    },
-    {
       title: "Spotify-clone",
       githubLink: "https://github.com/samjaiswal51/Spotify-Clone",
       image: "/images/projects/spotify1.png",
@@ -70,6 +65,11 @@ const ProjectsPage = () => {
       title: "Skymood",
       githubLink: "https://github.com/samjaiswal51/Skymood",
       image: "/images/mini/weather1.png",
+    },
+    {
+      title: "PhonePe Clone",
+      githubLink: "https://github.com/samjaiswal51/phonepe-clone-landing-page",
+      image: "/images/mini/phonepe1.png",
     },
   ];
 
