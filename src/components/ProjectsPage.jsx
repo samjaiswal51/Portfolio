@@ -4,7 +4,6 @@ import Certifications from "../components/Certifications";
 
 const ProjectsPage = () => {
   const projects = [
-    
     {
       title: "Hotel The Heaven",
       description:
@@ -22,6 +21,25 @@ const ProjectsPage = () => {
     },
 
     {
+      title: "OLXpress - Buy & Sell Platform",
+      description:
+        "A feature-rich OLX-inspired marketplace platform built with React, offering classified ads, product filtering, image carousels, and modern UI/UX animations.",
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
+      githubLink: "https://github.com/samjaiswal51/OLXpress",
+      liveDemo: "https://olxpress.vercel.app/",
+      screenshots: [
+        "/images/projects/olx1.png",
+        "/images/projects/olx2.png",
+        "/images/projects/olx3.png",
+        "/images/projects/olx4.png",
+      ],
+    },
+
+    {
       title: "Portfolio Website",
       description:
         "A personal developer portfolio showcasing skills, projects, certifications, and contact with a modern responsive design.",
@@ -34,7 +52,7 @@ const ProjectsPage = () => {
       ],
     },
 
-     {
+    {
       title: "Amazon Homepage Clone",
       description:
         "A responsive static clone of Amazon's homepage built using HTML and CSS, replicating the layout, navbar, product grid, and footer.",
@@ -46,8 +64,6 @@ const ProjectsPage = () => {
         "/images/projects/amazon2.png",
       ],
     },
-
-    
   ];
 
   const miniProjects = [
