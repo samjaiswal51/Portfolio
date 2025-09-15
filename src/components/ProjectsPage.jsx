@@ -73,6 +73,11 @@ const ProjectsPage = () => {
       image: "/images/mini/calc.png",
     },
     {
+      title: "Simon Sequence",
+      githubLink: "https://github.com/samjaiswal51/Simon-s-Sequence",
+      image: "/images/mini/simon.png",
+    },
+    {
       title: "Spotify-clone",
       githubLink: "https://github.com/samjaiswal51/Spotify-Clone",
       image: "/images/projects/spotify1.png",
